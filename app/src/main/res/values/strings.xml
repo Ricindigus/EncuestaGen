@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EncuestaGen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pregunta">*) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vestibulum consectetur tellus vestibulum fringilla suscipit. Nullam quis massa et enim ultricies.</string>
+    <string name="alternativa">Lorem ipsum dolor sit amet, consectetur adipiscing elit alternativa</string>
+    <string name="opcion">Lorem</string>
+    <string name="nosabe">NO SABE</string>
+    <string-array name="Seleccione">
+        <item>Array Item One</item>
+        <item>Array Item Two</item>
+        <item>Array Item Three</item>
+    </string-array>
+</resources>
