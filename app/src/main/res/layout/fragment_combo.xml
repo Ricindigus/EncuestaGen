@@ -27,6 +27,7 @@
                 android:id="@+id/combo_alternativa1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -35,17 +36,21 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/alternativa" />
-                <Spinner
-                    style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
-                    android:id="@+id/combo_opciones1"
+                <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/accent"/>
+                    android:background="@drawable/fondo_spinner">
+                    <Spinner
+                        android:id="@+id/combo_opciones1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/combo_alternativa2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -54,15 +59,21 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/alternativa" />
-                <Spinner
-                    android:id="@+id/combo_opciones2"
+                <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondo_spinner">
+                    <Spinner
+                        android:id="@+id/combo_opciones2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/combo_alternativa3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -71,15 +82,21 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/alternativa" />
-                <Spinner
-                    android:id="@+id/combo_opciones3"
+                <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondo_spinner">
+                    <Spinner
+                        android:id="@+id/combo_opciones3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/combo_alternativa4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -88,15 +105,21 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/alternativa" />
-                <Spinner
-                    android:id="@+id/combo_opciones4"
+                <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondo_spinner">
+                    <Spinner
+                        android:id="@+id/combo_opciones4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/combo_alternativa5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -105,15 +128,21 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/alternativa" />
-                <Spinner
-                    android:id="@+id/combo_opciones5"
+                <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondo_spinner">
+                    <Spinner
+                        android:id="@+id/combo_opciones5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/combo_alternativa6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -122,15 +151,21 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/alternativa" />
-                <Spinner
-                    android:id="@+id/combo_opciones6"
+                <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondo_spinner">
+                    <Spinner
+                        android:id="@+id/combo_opciones6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/combo_alternativa7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -139,15 +174,21 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/alternativa" />
-                <Spinner
-                    android:id="@+id/combo_opciones7"
+                <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fondo_spinner">
+                    <Spinner
+                        android:id="@+id/combo_opciones7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/combo_alternativa8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -165,6 +206,7 @@
                 android:id="@+id/combo_alternativa9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -182,6 +224,7 @@
                 android:id="@+id/combo_alternativa10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -199,6 +242,7 @@
                 android:id="@+id/combo_alternativa11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
@@ -216,6 +260,7 @@
                 android:id="@+id/combo_alternativa12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
                 <TextView
