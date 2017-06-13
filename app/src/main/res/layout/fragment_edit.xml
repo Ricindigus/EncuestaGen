@@ -1,13 +1,352 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="pe.gob.inei.encuestagen.fragments.EditFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_margin="@dimen/layout_margin"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_edit_pregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pregunta_margin"
+            android:text="@string/pregunta"/>
+        <LinearLayout
+            android:layout_margin="@dimen/layout_margin"
+            android:id="@+id/layout_edit_alternativas"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</FrameLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/especifique"
+                    android:layout_marginRight="@dimen/pregunta_margin"/>
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja1"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+            android:id="@+id/edit_alternativa2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/edit_subpregunta2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/especifique" />
+
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja2"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja3"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja4"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja5"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja6"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja7"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja8"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja9"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja10"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja11"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/edit_subpregunta12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/alternativa" />
+                <EditText
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/edit_caja12"
+                    android:hint="texto referencia"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cajas_de_texto"
+                    android:padding="@dimen/pregunta_margin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/edit_alternativa_noSabe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <RadioButton
+                    android:id="@+id/edit_subpregunta_noSabe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nosabe"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

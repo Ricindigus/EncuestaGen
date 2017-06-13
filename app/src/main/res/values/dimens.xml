@@ -5,4 +5,5 @@
     <dimen name="textoLarge">25dp</dimen>
     <dimen name="textoMedium">20dp</dimen>
     <dimen name="textoSmall">25dp</dimen>
+    <dimen name="separacion_margin">5dp</dimen>
 </resources>
