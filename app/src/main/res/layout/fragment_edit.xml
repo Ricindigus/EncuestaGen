@@ -29,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:orientation="horizontal"
+
                 >
                 <TextView
                     android:id="@+id/edit_subpregunta1"
