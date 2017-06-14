@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import pe.gob.inei.encuestagen.R;
-import pe.gob.inei.encuestagen.pojos.PreguntaCombo;
+import pe.gob.inei.encuestagen.pojos.preguntas.PreguntaCombo;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -49,14 +49,14 @@ public class ComboFragment extends Fragment {
         txtPregunta = (TextView) rootView.findViewById(R.id.txt_combo_pregunta);
         txtPregunta.setText(preguntaCombo.getPregunta());
 
-        for (int i = 0; i < preguntaCombo.getAlternativasCombo().length; i++){
+        for (int i = 0; i < preguntaCombo.getSubPreguntasCombo().length; i++){
             layoutPregunta = (LinearLayout) rootView.findViewById(alternativas[i]);
             txtSubPregunta = (TextView) rootView.findViewById(supPreguntas[i]);
             spOpciones = (Spinner)rootView.findViewById(opciones[i]);
 
             layoutPregunta.setVisibility(View.VISIBLE);
-            txtSubPregunta.setText( preguntaCombo.getAlternativasCombo()[i].getPregunta());
-            ArrayAdapter adapter = new ArrayAdapter(getActivity().getApplicationContext(), R.layout.custom_spinner,preguntaCombo.getAlternativasCombo()[i].getOpciones());
+            txtSubPregunta.setText( preguntaCombo.getSubPreguntasCombo()[i].getSubPregunta());
+            ArrayAdapter adapter = new ArrayAdapter(getActivity().getApplicationContext(), R.layout.custom_spinner,preguntaCombo.getSubPreguntasCombo()[i].getOpciones());
             spOpciones.setAdapter(adapter);
         }
         return rootView;

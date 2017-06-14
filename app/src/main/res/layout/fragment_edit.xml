@@ -42,12 +42,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja1"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
             android:id="@+id/edit_alternativa2"
@@ -67,12 +67,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja2"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa3"
@@ -93,12 +93,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja3"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa4"
@@ -119,12 +119,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja4"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa5"
@@ -145,12 +145,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja5"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa6"
@@ -171,12 +171,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja6"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa7"
@@ -197,12 +197,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja7"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa8"
@@ -223,12 +223,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja8"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa9"
@@ -249,12 +249,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja9"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa10"
@@ -275,12 +275,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja10"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa11"
@@ -301,12 +301,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja11"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa12"
@@ -327,12 +327,12 @@
                 <EditText
                     android:layout_gravity="center_vertical"
                     android:id="@+id/edit_caja12"
-                    android:hint="texto referencia"
                     android:layout_weight="2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/cajas_de_texto"
-                    android:padding="@dimen/pregunta_margin"/>
+                    android:padding="@dimen/pregunta_margin"
+                    android:inputType="text"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/edit_alternativa_noSabe"
@@ -342,7 +342,7 @@
                 android:orientation="horizontal"
                 android:visibility="gone"
                 >
-                <RadioButton
+                <CheckBox
                     android:id="@+id/edit_subpregunta_noSabe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

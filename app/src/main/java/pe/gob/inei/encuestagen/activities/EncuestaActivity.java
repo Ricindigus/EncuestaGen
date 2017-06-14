@@ -9,11 +9,7 @@ import pe.gob.inei.encuestagen.R;
 import pe.gob.inei.encuestagen.fragments.ComboFragment;
 import pe.gob.inei.encuestagen.fragments.EditFragment;
 import pe.gob.inei.encuestagen.fragments.RadioFragment;
-import pe.gob.inei.encuestagen.pojos.AlternativaCombo;
-import pe.gob.inei.encuestagen.pojos.AlternativaRadio;
-import pe.gob.inei.encuestagen.pojos.PreguntaCombo;
-import pe.gob.inei.encuestagen.pojos.PreguntaEdit;
-import pe.gob.inei.encuestagen.pojos.PreguntaRadio;
+import pe.gob.inei.encuestagen.pojos.preguntas.PreguntaEdit;
 
 public class EncuestaActivity extends AppCompatActivity {
 
@@ -62,7 +58,7 @@ public class EncuestaActivity extends AppCompatActivity {
                 "Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet.",
                 "Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet.","Lorem ipsum dolor sit amet.",
                 "Lorem ipsum dolor sit amet."};
-        PreguntaEdit preguntaEdit = new PreguntaEdit(pregunta,alternativasEdit,true);
+        PreguntaEdit preguntaEdit = new PreguntaEdit(100,4,pregunta,alternativasEdit,true);
 
         fragmentManager = getSupportFragmentManager();
 //        comboFragment = new ComboFragment(preguntaCombo);

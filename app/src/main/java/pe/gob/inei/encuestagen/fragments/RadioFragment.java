@@ -9,19 +9,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.TextView;
 
-import java.util.Vector;
-
 import pe.gob.inei.encuestagen.R;
-import pe.gob.inei.encuestagen.pojos.AlternativaRadio;
-import pe.gob.inei.encuestagen.pojos.PreguntaRadio;
+import pe.gob.inei.encuestagen.pojos.preguntas.PreguntaRadio;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,10 +54,10 @@ public class RadioFragment extends Fragment {
         txtPregunta = (TextView) rootView.findViewById(R.id.txt_radio_pregunta);
         txtPregunta.setText(preguntaRadio.getPregunta());
 
-        for (int i = 0; i < preguntaRadio.getAlternativasRadio().length; i++){
+        for (int i = 0; i < preguntaRadio.getSubPreguntasRadio().length; i++){
             rbAlternativa = (RadioButton) rootView.findViewById(alternativas[i]);
             rbAlternativa.setVisibility(View.VISIBLE);
-            rbAlternativa.setText( preguntaRadio.getAlternativasRadio()[i].getPregunta());
+            rbAlternativa.setText( preguntaRadio.getSubPreguntasRadio()[i].getSubPregunta());
         }
         return rootView;
     }
@@ -82,7 +76,7 @@ public class RadioFragment extends Fragment {
                     indice++;
                     if( alternativas[indice] == i) encontrado = true;
                 }
-                if(preguntaRadio.getAlternativasRadio()[indice].isEspecificar()){
+                if(preguntaRadio.getSubPreguntasRadio()[indice].isHabilitarCaja()){
                     edtEspecifique = (EditText) view.findViewById(cajasDeTexto[indice]);
                     edtEspecifique.setVisibility(View.VISIBLE);
                     visualizado = edtEspecifique;

@@ -7,15 +7,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import pe.gob.inei.encuestagen.R;
-import pe.gob.inei.encuestagen.pojos.PreguntaEdit;
+import pe.gob.inei.encuestagen.pojos.preguntas.PreguntaEdit;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -53,11 +51,11 @@ public class EditFragment extends Fragment {
         txtPregunta = (TextView) rootView.findViewById(R.id.txt_edit_pregunta);
         txtPregunta.setText(preguntaEdit.getPregunta());
 
-        for (int i = 0; i < preguntaEdit.getAlternativasEdit().length; i++){
+        for (int i = 0; i < preguntaEdit.getSubPreguntasEdit().length; i++){
             layoutPregunta = (LinearLayout) rootView.findViewById(alternativas[i]);
             txtSubPregunta = (TextView) rootView.findViewById(subPreguntas[i]);
             layoutPregunta.setVisibility(View.VISIBLE);
-            txtSubPregunta.setText(preguntaEdit.getAlternativasEdit()[i]);
+            txtSubPregunta.setText(preguntaEdit.getSubPreguntasEdit()[i]);
         }
         if(preguntaEdit.isNoSabe()){
             layoutNoSabe = (LinearLayout) rootView.findViewById(R.id.edit_alternativa_noSabe);
